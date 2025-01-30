@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="adminstyle.css" />
+    <title>Admin Dashboard - Hotel Management System</title>
+</head>
+<body  >
+    <header class="header">
+        <nav>
+            <div class="nav__bar">
+                <div class="logo">
+                    <a href="index.html"><img src="assets/logo.png" alt="logo" height="150" /></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container" > 
+        <div id="loginForm">
+            <h2>Admin Login</h2>
+            <form id="login-form" onsubmit="return login(event)">
+                <div class="input__group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Enter your username" required />
+                </div>
+                <div class="input__group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" required />
+                </div>
+                <div class="input_group input_btn">
+                    <button type="submit" class="btn">Login</button>
+                </div>
+                <div class="login-message" id="login-message"></div>
+            </form>
+        </div>
+
+        <div id="dashboard" style="display: none;">
+            <h1>Hotel Admin Dashboard</h1>
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'Customers')" id="defaultOpen">Customers</button>
+                <button class="tablinks" onclick="openTab(event, 'Staff')">Staff</button>
+                <button class="tablinks" onclick="openTab(event, 'Rooms')">Rooms</button>
+            </div>
+
+            <div id="Customers" class="tabcontent">
+                <h2>Customer List</h2>
+                <table id="customerTable">
+                    <tr>
+                        <th>Customer ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Contact</th>
+                        <th>Room Number</th>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="Staff" class="tabcontent">
+                <h2>Staff List</h2>
+                <table id="staffTable">
+                    <tr>
+                        <th>Staff ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Contact</th>
+                        <th>Salary</th>
+                        <th>Post</th>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="Rooms" class="tabcontent">
+                <h2>Room List</h2>
+                <table id="roomTable">
+                    <tr>
+                        <th>Room Number</th>
+                        <th>Type</th>
+                        <th>Availability</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>
+
+
+
+

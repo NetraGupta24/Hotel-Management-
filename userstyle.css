@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #dce2e2; /* Match the background color */
+}
+
+.container {
+    max-width: 1200px; /* Match the max width */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#loginForm, #userDashboard {
+    background-color: #7ca7a7; /* Match the login form background */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#loginForm {
+    max-width: 300px;
+    margin: 100px auto;
+}
+
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #dce2e2; /* Consistent border color */
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #407783; /* Match the button color */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #a4bdbb; /* Match hover effect */
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.options button {
+    width: 30%;
+}
+
+#userInfo {
+    background-color: #5ca1b0; /* Match the header color */
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+#roomKey, #services, #checkOutMessage {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #dce2e2; /* Match the overall background */
+    border-radius: 5px;
+}
+
+#keyNumber {
+    font-size: 24px;
+    font-weight: bold;
+    color: #407783; /* Match the color theme */
+}
+
+.hidden {
+    display: none;
+}

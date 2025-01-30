@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="userstyle.css" />
+    <title>User Login - Hotel Management System</title>
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <div class="nav__bar">
+                <div class="logo">
+                    <a href="index.html"><img src="assets/logo.png" alt="logo" height="150" /></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div id="loginForm">
+            <h2>User Login</h2>
+            <input type="text" id="username" placeholder="Username" required />
+            <input type="password" id="password" placeholder="Password" required />
+            <button onclick="login()">Login</button>
+            <div class="login-message" id="login-message"></div>
+        </div>
+
+        <div id="userDashboard" class="hidden">
+            <div id="userInfo"></div>
+            <h1>Welcome to Your Hotel Portal</h1>
+            <div class="options">
+                <button onclick="webCheckIn()">Web Check-In</button>
+                <button onclick="showServices()">Services</button>
+                <button onclick="webCheckOut()">Web Check-Out</button>
+            </div>
+            <div id="roomKey" class="hidden">
+                <h2>Your Room Key</h2>
+                <p id="keyNumber"></p>
+            </div>
+            <div id="services" class="hidden">
+                <h2>Hotel Services</h2>
+                <ul>
+                    <li>Room Service</li>
+                    <li>Housekeeping</li>
+                    <li>Concierge</li>
+                    <li>Spa Booking</li>
+                </ul>
+            </div>
+            <div id="checkOutMessage" class="hidden">
+                <h2>Check-Out Confirmation</h2>
+                <p>Thank you for staying with us. Your check-out has been processed.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="user.js"></script>
+</body>
+</html>

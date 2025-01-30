@@ -1,0 +1,96 @@
+body {
+    background-image: url(\assets\about.jpg);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+#loginForm, #userDashboard {
+    background-color: #7ca7a7; /* Match the login form background */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#loginForm {
+        max-width: 300px;
+    margin: 100px auto;
+}
+
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #dce2e2;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #407783;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s
+}
+
+button:hover {
+    background-color: #a4bdbb;
+}
+
+table {
+    background-color: #dce2e2; /* Fixed missing semicolon */
+    width: 100%; /* Fixed missing semicolon */
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #5ca1b0;
+    color: white;
+}
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #000;
+    background-color: #b18f69;
+}
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+.tab button:hover {
+    background-color: #d8caaf;
+}
+
+.tab button.active {
+    background-color: #d8caaf;
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #000000;
+    border-top: none;
+}

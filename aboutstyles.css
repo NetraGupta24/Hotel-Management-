@@ -1,0 +1,139 @@
+/* General Body Style */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    margin-bottom: 10rem;
+    font-family: cursive;
+background-image: url('https://images.pexels.com/photos/994605/pexels-photo-994605.jpeg'); 
+background-size: cover; 
+background-position: center; 
+background-repeat: no-repeat;
+
+
+}
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 205.6%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black color with 50% opacity */
+    z-index: 0; /* Keep it behind the content */
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 5rem;
+    
+}
+h1, h2 {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 5rem;
+    
+
+}
+
+p {
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    position: relative;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Amenities and Location Benefits Sections */
+.tiles {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tile {
+    position: relative;
+    max-width: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.tile:hover {
+    transform: scale(1.05);
+}
+
+.tile img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.tile:hover img {
+    transform: scale(1.1);
+}
+
+.tile .details, .tile .benefits {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.tile:hover .details, .tile:hover .benefits {
+    opacity: 1;
+}
+
+.tile .title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.tile .info {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Specific Container Styles */
+.amenities-container, .info-container {
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.amenity-card, .info-card {
+    flex: 1;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .tiles {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tile {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
